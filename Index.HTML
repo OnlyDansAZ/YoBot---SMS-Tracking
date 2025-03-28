@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Consent Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SMS Consent Agreement</h1>
+
+    <p>By opting in, you agree to receive text messages from Ella, our automated assistant. Message frequency may vary. Standard message and data rates may apply.</p>
+
+    <h2>How to Opt-In</h2>
+    <p>To provide consent and start receiving messages, reply <strong>YES</strong> to our initial SMS.</p>
+
+    <h2>How to Opt-Out</h2>
+    <p>If you no longer wish to receive messages, reply <strong>STOP</strong> at any time. You will receive a confirmation message, and no further texts will be sent.</p>
+
+    <h2>Help & Support</h2>
+    <p>For assistance, reply <strong>HELP</strong>, or contact our support team at <a href="mailto:support@example.com">support@example.com</a>.</p>
+
+    <h2>Data & Privacy</h2>
+    <p>We securely store consent records and opt-in/opt-out requests. These records are available upon request for compliance verification.</p>
+
+    <h2>Verification & Compliance</h2>
+    <p>Consent records are maintained in a secure database, and message logs are stored in Twilio. This ensures compliance with CTIA, TCPA, and carrier regulations.</p>
+
+    <h2>Opt-In Form</h2>
+    <form action="https://script.google.com/macros/s/your-script-id/exec" method="POST">
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="phone">Phone Number (required):</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label for="optin">
+            <input type="checkbox" id="optin" name="optin" value="yes" required> I agree to receive SMS messages.
+        </label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
